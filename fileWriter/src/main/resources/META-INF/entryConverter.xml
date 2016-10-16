@@ -12,5 +12,6 @@
 		<!-- Converts the list of quotations in one message per quotation -->
 		<int:object-to-string-transformer input-channel="input" output-channel="stringChannel"></int:object-to-string-transformer>
 	
+		<!-- Channel that the FileWritingMessageHandler will listen instead of "input" -->
 		<int:channel id="stringChannel"></int:channel>
 </beans>
